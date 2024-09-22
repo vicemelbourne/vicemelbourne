@@ -1,0 +1,43 @@
+body
+{
+	background-attachment: fixed;
+	background-color: #06B1F2;
+	background-image: url('background-min.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	/* scrollbar-gutter: stable; */
+	text-align: center;
+	overflow-y: scroll;
+}
+nav
+{
+	margin: 50px;
+}
+a
+{
+	text-shadow: none;
+}
+nav a,
+.panel
+{
+	background-color: #89CFF0;
+	border: 5px solid #D6EF4D;
+	color: #DF0CDC;
+	text-shadow: 2px 2px 5px #06B1F2;
+}
+nav a
+{
+	font-size: 24px;
+	font-weight: bold;
+	margin: 30px;
+	padding: 20px;
+	text-decoration: none;
+}
+.panel
+{
+	margin: 0 auto;
+	padding: 10px 20px;
+	text-align: left;
+	width: 80%;
+}
