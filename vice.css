@@ -4,11 +4,16 @@ body
 	background-color: #06B1F2;
 	background-image: url('background-min.jpg');
 	background-position: center;
-	background-repeat: no-repeat;
+	/* background-repeat: no-repeat; */
 	font-family: Arial, Helvetica, sans-serif;
-	/* scrollbar-gutter: stable; */
 	text-align: center;
 	overflow-y: scroll;
+}
+@media only screen and (max-width: 600px) {
+	body
+	{
+		overflow-y: auto;
+	}
 }
 nav
 {
