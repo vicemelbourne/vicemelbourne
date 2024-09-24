@@ -26,11 +26,26 @@ function showFaq(e) {
 	$(".updates-content").hide();
 	$(".faq-content").show();
 }
+function mediaQueryInit() {
+const mediaQueryList = window.matchMedia("(max-width: 600px)");
+	if (mediaQueryList.matches) {
+		$(".logo").attr("src", "logo-mobile-min.png");
+		$("nav a").css("margin", "auto");
+		$("nav a").css("font-size", "20px");
+		$("nav a").css("padding", "10px");
+		$("body").css("overflow-y", "auto");
+		$(".about").text("About");
+		console.log("max width 600 or less");
+	} else {
+		console.log("max width over 600");
+	}
+}
 $(document).ready(function() {
 	$(".about-content").show(); // default content
 	$(".contact-content").hide();
 	$(".updates-content").hide();
 	$(".faq-content").hide();
+	mediaQueryInit();
 	$("body").on("click", ".about", showAbout);
 	$("body").on("click", ".contact", showContact);
 	$("body").on("click", ".updates", showUpdates);

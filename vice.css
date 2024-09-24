@@ -40,13 +40,11 @@ nav a
 	text-align: left;
 	width: 80%;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 	nav a
 	{
-		margin: 10px;
+		margin: auto;
 	}
-}
-@media (max-width: 600px) {
 	body
 	{
 		/* background-image: url('mobile-min.jpg'); */
