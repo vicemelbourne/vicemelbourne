@@ -30,10 +30,12 @@ function mediaQueryInit() {
 const mediaQueryList = window.matchMedia("(max-width: 600px)");
 	if (mediaQueryList.matches) {
 		$(".logo").attr("src", "logo-mobile-min.png");
+		$(".logo").attr("width", "100%");
 		$("nav a").css("margin", "auto");
 		$("nav a").css("font-size", "20px");
 		$("nav a").css("padding", "10px");
 		$("body").css("overflow-y", "auto");
+		$("body").css("background-image", "mobile-min.jpg");
 		$(".about").text("About");
 		console.log("max width 600 or less");
 	} else {
