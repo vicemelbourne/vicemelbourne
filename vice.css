@@ -41,6 +41,10 @@ nav a
 	text-align: left;
 	width: 80%;
 }
+iframe
+{
+	width: 100%;
+}
 @media screen and (max-width: 600px) {
 	nav a
 	{
