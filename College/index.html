@@ -1,0 +1,125 @@
+<html>
+<head>
+<style media="screen">
+body {
+	background-color: silver;
+	background-image:
+		linear-gradient(335deg, #b00 23px, transparent 23px),
+		linear-gradient(155deg, #d00 23px, transparent 23px),
+		linear-gradient(335deg, #b00 23px, transparent 23px),
+		linear-gradient(155deg, #d00 23px, transparent 23px);
+	background-size: 58px 58px;
+	background-position: 0px 2px, 4px 35px, 29px 31px, 31px 6px;
+	font-family: Courier;
+}
+.panel {
+	margin: 0 auto;
+}
+.paper {
+	position: absolute;
+	display: flex;
+	width: 400px;
+	top: 0%; left: 50%; transform: translate(-50%, 0);
+	margin: 2em 0;
+	padding: 15em;
+	box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+	background: #fffef0;
+	filter: url(#wavy2);
+}
+.invite {
+	position: relative;
+ 	display: flex;
+	flex-direction: column;
+	width: 920px;
+	height: auto;
+	margin: 0 auto;
+	padding: 3em;
+	text-align: center;
+}
+.croc, .cougar {
+	background-position: center;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	height: 0;
+	padding: 5em;
+}
+.croc {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+.cougar {
+	position: absolute;
+	top: 0;
+	right: 30px;
+}
+.img-tape {
+  position: relative;
+  
+  &:before,
+  &:after {
+    background: rgba(255,255,235,.6);
+    box-shadow: 0 1px 3px rgba(0,0,0,.4);
+    content: "";
+    display: block;
+    height: 30px;
+    position: absolute;
+    margin: auto;
+    width: 100px;
+  }
+
+  img {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 3px rgba(0,0,0,.4);
+    display: inline-block;
+    height: auto;
+    margin: 0 20px;
+    max-width: 100%;
+    padding: 8px;
+    text-align: center;
+    vertical-align: top;
+  }
+}
+.img-tape--2 {
+  &:before {
+    left: 0;
+    top: 0;
+    transform: rotate(-44deg);
+  }
+
+  &:after {
+    right: 0;
+    top: 0;
+    transform: rotate(45deg);
+  }
+}
+</style>
+</head>
+<body>
+<div class="panel">
+	<div class="paper"></div>
+		<div class="invite">
+			<div class="img-tape img-tape--2">
+				<h1>BATTLE OF THE HOUSES</h1>
+				<h2>KΣG<br/>vs.<br/>KμM</h2>
+				<h2>Friday May 30th 7pm-1am</h2>
+				<h2>Evie's Disco Diner<br />
+				230-232 Gertrude St, Fitzroy</h2>
+				<h2>PARTY HEARTY!</h2>
+			</div>
+			<div class="croc"><img src="croc-dot.png" /></div>
+			<div class="cougar"><img src="cougar-dot.png" /></div>
+		</div>
+	</div>
+</div>
+<svg>
+  <filter id="wavy2">
+    <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1" />
+    <feDisplacementMap in="SourceGraphic" scale="20" />
+  </filter>
+</svg>
+</body>
+</html>
