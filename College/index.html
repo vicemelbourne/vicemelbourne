@@ -57,12 +57,12 @@ body {
 .croc {
 	position: absolute;
 	top: 30px;
-	left: 30px;
+	left: 0;
 }
 .cougar {
 	position: absolute;
 	top: 0;
-	right: 30px;
+	right: 0;
 }
 .img-tape {
   position: relative;
@@ -107,6 +107,7 @@ body {
 }
 .faq-section {
 	background-color: #fffef0;
+	min-height: 400px;
 	padding: 30px;
 }
 .keg-red {
@@ -121,26 +122,28 @@ body {
 </head>
 <body>
 <div class="panel">
-	<div class="paper"></div>
+	<!-- <div class="paper"></div> -->
 		<div class="invite">
 			<div class="img-tape img-tape--2">
-				<h2>VICE Melbourne presents</h2>
-				<h1>BATTLE OF THE HOUSES</h1>
-				<h2><span class="keg-red">KΣG</span> vs. <span class="kum-blue">KμM</span></h2>
-				<h2>Who will PARTY THE HARDEST?</h2>
-				<h2>Friday May 30th 7pm-1am</h2>
-				<h2>Evie's Disco Diner<br />
-				230-232 Gertrude St, Fitzroy</h2>
-				<h2>PLEDGE TODAY!</h2>
+				<div class="faq-section">
+					<div class="width-limiter">
+						<h3>VICE Melbourne presents</h3>
+						<h1>BATTLE OF THE HOUSES</h1>
+						<h2>KΣG vs. KμM</h2>
+						<h2>Friday May 30th 7pm-1am</h2>
+						<h3>Evie's Disco Diner<br />
+						230-232 Gertrude St, Fitzroy</h3>
+						<h2>Who will PARTY THE HARDEST?</h2>
+					</div>
+				</div>
 			</div>
 			<div class="croc"><img src="croc-dot.png" /></div>
 			<div class="cougar"><img src="cougar-dot.png" /></div>
 		</div>
 	</div>
 </div>
-<br /><br /><br />
 <div class="panel">
-	<div class="invite" style="width: 880px">
+	<div class="invite">
 		<div class="img-tape img-tape--2">
 			<div class="faq-section">
 				<h1>FAQ</h1>
