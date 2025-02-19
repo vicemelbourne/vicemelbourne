@@ -4,10 +4,10 @@
 body {
 	background-color: silver;
 	background-image:
-		linear-gradient(335deg, #b00 23px, transparent 23px),
-		linear-gradient(155deg, #d00 23px, transparent 23px),
-		linear-gradient(335deg, #b00 23px, transparent 23px),
-		linear-gradient(155deg, #d00 23px, transparent 23px);
+		linear-gradient(335deg, #222 23px, transparent 23px),
+		linear-gradient(155deg, #333 23px, transparent 23px),
+		linear-gradient(335deg, #222 23px, transparent 23px),
+		linear-gradient(155deg, #333 23px, transparent 23px);
 	background-size: 58px 58px;
 	background-position: 0px 2px, 4px 35px, 29px 31px, 31px 6px;
 	font-family: Courier;
@@ -113,6 +113,41 @@ body {
 	margin: 0 auto;
 	max-width: 410px;
 }
+@font-face {
+	font-family: aAnotherTag;
+	src: url("aAnotherTag.otf") format("opentype");
+}
+.graffiti {
+	font-family: aAnotherTag, Arial;
+	font-size: 120px;
+	opacity: 97%;
+	position: absolute;
+	top: 50%;
+	z-index: -2;
+	transform: rotate(340deg);
+	-webkit-transform: rotate(340deg);
+	text-shadow: 2px 10px 2px white;
+}
+.keg-left {
+	text-shadow: 2px 10px 2px gold;
+}
+.kum-right.graffiti {
+	right: 3%;
+	transform: rotate(40deg);
+	-webkit-transform: rotate(40deg);
+}
+.logo {
+	opacity: 90%;
+	position: absolute;
+	top: 10%;
+	z-index: -1;
+}
+.logo.logo-left {
+	left: 5%;
+}
+.logo.logo-right {
+	right: 5%;
+}
 </style>
 </head>
 <body>
@@ -197,11 +232,11 @@ body {
 		</div>
 	</div>
 </div>
-<svg>
-  <filter id="wavy2">
-    <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1" />
-    <feDisplacementMap in="SourceGraphic" scale="20" />
-  </filter>
-</svg>
+<div>
+	<div class="logo logo-left"><img src="keg-head.png" width="300" height="200" /></div>
+	<div class="logo logo-right"><img src="kum-head.png" width="300" height="200" /></div>
+	<div class="keg-red keg-left graffiti">KEG RULZ OK!</div>
+	<div class="kum-blue kum-right graffiti">KuM HARD</div>
+</div>
 </body>
 </html>
